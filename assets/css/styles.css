@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 2.5rem;
+  font-family: "Caveat", sans-serif;
+  font-size: 20px;
+}
+
+#bitacora {
+  background-image: url("../img/bitacora.jpg");
+  background-size: cover;
+  rotate: -2deg;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #d09562;
+  height:90vh;
+}
+
+#cuadernillo {
+  background-color: #eae8e8;
+  background-image: linear-gradient(#e0e0e0 1px, transparent 1px);
+  background-size: 100% 30px;
+  rotate: 2deg;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+  font-size:26px;
+}
+
+#Animales .card-footer btn,
+.btn {
+  background: #f4e9d8;
+  border: 1px solid #d3c1a5;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.1),
+    inset 0 1px 4px rgba(255, 255, 255, 0.4),
+    inset 0 -3px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn__stamp {
+  color: #555;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.25rem solid #555;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-family: "Courier";
+  -webkit-mask-image: url("../img/background_stamp.png");
+  -webkit-mask-size: 944px 604px;
+  mix-blend-mode: multiply;
+}
+
+.btn__stamp--approved {
+  color: #0a9928;
+  border: 0.5rem solid #0a9928;
+  -webkit-mask-position: 13rem 6rem;
+  border-radius: 0;
+}
+
+.card-img {
+  background-image: url("../img/cuadernillo.png");
+  height: 50px;
+  width: 100%;
+  margin-top: -19px;
+}
+
+/* Formulario */
+#preview {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: #fff radial-gradient(#eae8e8 0px, #eae8e8 8px, transparent 7px);
+  background-size: 18px 18px;
+  background-position: -12px;
+  rotate: 5deg;
+  --background-url: url("../img/lion.svg");
+}
+
+#preview::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  background-image: var(--background-url);
+  background-position: center;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 10px #fff;
+}
+
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+  gap: 2rem;
+}
+
+#Animales .card {
+  padding: 0;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+}
+
+#Animales .card-body {
+  padding: 0;
+}
+
+#Animales .card-img-top {
+  height: 250px;
+  width:100%;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  cursor: pointer;
+}
+
+#Animales .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+
+#Animales .card-footer img {
+  height: 16px;
+  margin-bottom: 5px;
+  filter: invert(100%);
+}
+
+#Animales .card-footer btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+/* Modal */
+.modal-content {
+  background: transparent;
+  border: 0;
+}
+
+.modal-body {
+  background-image: url("../img/bitacora.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.modal-body img {
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+  margin-bottom: 1rem;
+}
+.modal-comments {
+  font-size: 12px;
+}
+@media (min-height: 680px){
+
+  .btn__stamp {
+    font-size: 2rem;
+  }
+  #preview {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: #fff radial-gradient(#eae8e8 0px, #eae8e8 8px, transparent 7px);
+    background-size: 20px 20px;
+    background-position: -10px;
+    rotate: 5deg;
+    --background-url: url("../img/lion.svg");
+  }
+  
+  #preview::before {
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background-image: var(--background-url);
+    background-position: center;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 10px #fff;
+  }
+  
+}
