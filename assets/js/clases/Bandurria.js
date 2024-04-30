@@ -1,11 +1,11 @@
 import Animal from "./Animal.js";
 
-// Oso es hijo de Animal
-export default class Oso extends Animal {
+// Bandurria es hijo de Animal
+export default class Bandurria extends Animal {
   constructor(nombre, edad, img, comentarios, sonido) {
     super(nombre, edad, img, comentarios, sonido);
   }
-  get Gruñir() {
+  get Chillar() {
     this.reproducirSonido();
   }
 }

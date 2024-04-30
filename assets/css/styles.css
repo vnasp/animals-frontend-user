@@ -113,7 +113,7 @@ body {
 }
 
 #Animales .card-img-top {
-  height: 250px;
+  height: 200px;
   width:100%;
   object-fit: cover;
   object-position: top;
@@ -171,10 +171,10 @@ body {
   }
   #preview {
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background: #fff radial-gradient(#eae8e8 0px, #eae8e8 8px, transparent 7px);
-    background-size: 20px 20px;
+    background-size: 19px 19px;
     background-position: -10px;
     rotate: 5deg;
     --background-url: url("../img/lion.svg");
@@ -183,7 +183,7 @@ body {
   #preview::before {
     content: "";
     position: absolute;
-    inset: 20px;
+    inset: 19px;
     background-image: var(--background-url);
     background-position: center;
     background-color: white;

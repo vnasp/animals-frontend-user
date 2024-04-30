@@ -1,8 +1,8 @@
-import Leon from "./clases/Leon.js";
-import Lobo from "./clases/Lobo.js";
-import Oso from "./clases/Oso.js";
-import Serpiente from "./clases/Serpiente.js";
-import Aguila from "./clases/Aguila.js";
+import Chinchilla from "./clases/Chinchilla.js";
+import Puma from "./clases/Puma.js";
+import Bandurria from "./clases/Bandurria.js";
+import Zorro from "./clases/Zorro.js";
+import Lagartija from "./clases/Lagartija.js";
 import Renderizar from "./Renderizar.js";
 import { obtenerDatosPorEspecie } from './CargarDatos.js';
 
@@ -38,16 +38,16 @@ export async function agregarAnimal() {
 // Instanciamos para crear un objeto con toda la información del animal, lo agregamos al array y renderizamos
 export function Crear(especie, edad, comentarios, mediaData) {
   let animal;
-  if (especie === "Leon") {
-    animal = new Leon(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
-  } else if (especie === "Lobo") {
-    animal = new Lobo(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
-  } else if (especie === "Oso") {
-    animal = new Oso(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
-  } else if (especie === "Aguila") {
-    animal = new Aguila(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
-  } else if (especie === "Serpiente") {
-    animal = new Serpiente(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
+  if (especie === "Chinchilla") {
+    animal = new Chinchilla(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
+  } else if (especie === "Puma") {
+    animal = new Puma(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
+  } else if (especie === "Zorro") {
+    animal = new Zorro(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
+  } else if (especie === "Bandurria") {
+    animal = new Bandurria(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
+  } else if (especie === "Lagartija") {
+    animal = new Lagartija(especie, edad, mediaData.imagen, comentarios, mediaData.sonido);
   } else {
     alert("No se encontraron datos para la especie seleccionada");
   }
