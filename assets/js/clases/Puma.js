@@ -1,7 +1,7 @@
 import Animal from "./Animal.js";
 
-// Lobo es hijo de Animal
-export default class Lobo extends Animal {
+// Puma es hijo de Animal
+export default class Puma extends Animal {
   constructor(nombre, edad, img, comentarios, sonido) {
     super(nombre, edad, img, comentarios, sonido);
   }
